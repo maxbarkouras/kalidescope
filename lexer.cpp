@@ -35,6 +35,7 @@ static int gettok() {
         do {
             NumStr += LastChar;
             LastChar = getchar();
+            
         } while (isdigit(LastChar) || LastChar == '.');
 
         NumVal = strtod(NumStr.c_str(), 0);
